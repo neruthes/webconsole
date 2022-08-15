@@ -1,0 +1,59 @@
+#WebConsole, #WebConsole * {
+    box-sizing: border-box;
+}
+#WebConsole {
+/* #wcContainer { */
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 50vh;
+    border-top: 1px solid #AAA;
+}
+
+
+
+.wcLogList {
+    height: auto;
+}
+.wcLogList-logItem {
+    padding: 9px;
+    border-bottom: 1px solid #AAA;
+}
+.wcLogList-logItem-header {
+    font-size: 12px;
+}
+.wcLogList-logItem-header > span {
+    margin-right: 10px;
+}
+.wcLogList-logItem-header-date {
+    font-family: 'JetBrains Mono NL', 'JetBrains Mono', 'Inconsolata', 'Courier New', Courier, monospace;
+}
+.wcLogList-logItem-header-type {}
+.wcLogList-logItem-header-state {}
+.wcLogList-logItem-rawcmd {
+    font-family: 'JetBrains Mono NL', 'JetBrains Mono', 'Inconsolata', 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: #0066CC;
+}
+.wcLogList-logItem-content {
+    font-family: 'JetBrains Mono NL', 'JetBrains Mono', 'Inconsolata', 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+[data-logitem-state="err"] .wcLogList-logItem-content,
+[data-logitem-state="err"] .wcLogList-logItem-header-state {
+    color: #F44;
+}
+
+
+
+#wcInputRegion {
+    padding: 12px 9px;
+}
+#wcInputRegion-textarea {
+    resize: none;
+    width: auto;
+    width: 100%;
+    height: 3em;
+}
